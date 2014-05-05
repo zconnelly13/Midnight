@@ -2,4 +2,4 @@ Midnight
 ========
 
 ###Who is that?
-Midnight is a girl who lives in a clock that is also a tree.
+Midnight is a girl who lives in a tree that is also a clock.
