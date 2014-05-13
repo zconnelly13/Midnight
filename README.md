@@ -14,7 +14,7 @@ Midnight
 ## Next Steps
 
 ###Overview
-I want a very basic 
+I want a very basic version of this to play. You should basically start at your home and run to the right. After going down a bit you'll discover a small horde of little somethings that respawn. They should drop gold coins or something when you kill them. I'm not sure how I want to do damage / death because I'm not sure I'd like to do it in a traditional way. But for now you should just get some negative feedback. Maybe the controler buzzes and your screen flashes a bit or something? Not quite sure.
 
 ###Art
 We're going to use this background for now </br>
@@ -38,10 +38,10 @@ We'll also need...
 2. A basic enemy, and something for it to shoot
 
 ###Summary
-To summarize
 
 1. Nighttime grass tiles (static)
 2. Maybe some trees for the background... maybe. (static)
+3. Gold coin (static)
 3. Fireflies (animated)
 4. Simply enemy that shoots something (simple animation)
 5. A kitteh. (animated)
