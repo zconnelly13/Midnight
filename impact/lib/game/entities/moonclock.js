@@ -21,10 +21,14 @@ ig.module(
         init: function(x, y, settings) {
             this.parent(x,y,settings);
             this.addAnim('default',1,[0]);
+            this.x = this.pos.x;
+            this.y = this.pos.y;
         },
 
         update: function() {
             this.parent();
+            this.pos.x = this.x + ig.game.screen.x;
+            this.pos.y = this.y + ig.game.screen.y;
         },
 
     });

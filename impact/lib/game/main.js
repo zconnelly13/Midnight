@@ -14,10 +14,18 @@ MyGame = ig.Game.extend({
 	font: new ig.Font( 'media/04b03.font.png' ),
 	
 	init: function() {
+        ig.input.bind(ig.KEY.LEFT_ARROW,'left')
+        ig.input.bind(ig.KEY.RIGHT_ARROW,'right')
         this.loadLevel(LevelHome);
 	},
 	
 	update: function() {
+        if (ig.input.state('left')) {
+            this.screen.x-=1;
+        }
+        if (ig.input.state('right')) {
+            this.screen.x+=1;
+        }
 		this.parent();
 	},
 	
@@ -26,7 +34,7 @@ MyGame = ig.Game.extend({
 		var x = ig.system.width/2,
 			y = ig.system.height/2;
 		
-		this.font.draw( 'Midnight.', x, y, ig.Font.ALIGN.CENTER );
+		//this.font.draw( 'Midnight.', x, y, ig.Font.ALIGN.CENTER );
 	},
 });
 
