@@ -8,7 +8,7 @@ ig.module(
     
     EntityMidnight = ig.Entity.extend({
         _wmScalable: true,
-        size: {x: 89, y:128},
+        size: {x: 89, y:122},
         maxVel: { x: 500, y: 500 },
         collides: ig.Entity.COLLIDES.ACTIVE,
         name: "Midnight",
@@ -29,10 +29,10 @@ ig.module(
 
         handleCameraMovement: function() {
             //if (this.pos.x > ig.system.width / 2) {
-                ig.game.screen.x = this.pos.x - ig.system.width / 2;
+                //ig.game.screen.x = this.pos.x - ig.system.width / 2;
             //}
             //if (this.pos.y < ig.system.height / 2 || ig.game.followY) {
-                ig.game.screen.y = this.pos.y - ig.system.height / 2;
+                //ig.game.screen.y = this.pos.y - ig.system.height / 2;
             //}
         },
 
