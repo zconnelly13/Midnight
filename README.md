@@ -4,8 +4,10 @@ Midnight
 ###She's really fucking awesome
 <img align='center' src='http://i.imgur.com/2n7oKYR.gif' height='256px'></img>
 
-###But there's this moon that is also a clock?
-<img align='center' src='https://github.com/zconnelly13/Midnight/blob/master/art/moonclock.png?raw=true'></img>
+###And there's this moon that is also a clock?
+<img align='center' src='http://i.imgur.com/5yyOwTA.jpg' width='800px'></img>
+
+Here is the live [work in progress.](http://www.jazzberrygames.com/~zconnelly13/Midnight/impact/)
 
 ## Next Steps
 
