@@ -11,6 +11,7 @@ ig.module(
 
 MyGame = ig.Game.extend({
 	
+    gravity: 98,
 	font: new ig.Font( 'media/04b03.font.png' ),
 	
 	init: function() {
@@ -20,12 +21,6 @@ MyGame = ig.Game.extend({
 	},
 	
 	update: function() {
-        if (ig.input.state('left')) {
-            this.screen.x-=1;
-        }
-        if (ig.input.state('right')) {
-            this.screen.x+=1;
-        }
 		this.parent();
 	},
 	
