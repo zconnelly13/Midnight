@@ -15,8 +15,9 @@ MyGame = ig.Game.extend({
 	font: new ig.Font( 'media/04b03.font.png' ),
 	
 	init: function() {
-        ig.input.bind(ig.KEY.LEFT_ARROW,'left')
-        ig.input.bind(ig.KEY.RIGHT_ARROW,'right')
+        ig.input.bind(ig.KEY.LEFT_ARROW,'left');
+        ig.input.bind(ig.KEY.RIGHT_ARROW,'right');
+        ig.input.bind(ig.KEY.UP_ARROW,'up');
         this.loadLevel(LevelHome);
 	},
 	

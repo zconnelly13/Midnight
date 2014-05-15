@@ -14,6 +14,7 @@ ig.module(
         name: "Midnight",
 
         speed: 200,
+        jumpStrength: 128,
 
         animSheet: new ig.AnimationSheet('media/images/characters/midnight_running.png', 89, 128),
 
@@ -27,12 +28,12 @@ ig.module(
         },
 
         handleCameraMovement: function() {
-            if (this.pos.x > ig.system.width / 2) {
+            //if (this.pos.x > ig.system.width / 2) {
                 ig.game.screen.x = this.pos.x - ig.system.width / 2;
-            }
-            if (this.pos.y < ig.system.height / 2 || ig.game.followY) {
+            //}
+            //if (this.pos.y < ig.system.height / 2 || ig.game.followY) {
                 ig.game.screen.y = this.pos.y - ig.system.height / 2;
-            }
+            //}
         },
 
         handleMovement: function() {
@@ -44,6 +45,9 @@ ig.module(
                 this.vel.x = this.speed;
             } else {
                 this.vel.x = 0;
+            }
+            if (ig.input.pressed('up') && this.standing) {
+                this.vel.y = -this.jumpStrength;
             }
         },
 
