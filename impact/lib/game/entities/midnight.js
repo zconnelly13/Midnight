@@ -16,7 +16,7 @@ ig.module(
         speed: 200,
         jumpStrength: 128,
 
-        animSheet: new ig.AnimationSheet('media/images/characters/midnight_running.png', 89, 128),
+        animSheet: new ig.AnimationSheet('media/images/characters/midnight_running_photoshop.png', 89, 128),
 
         init: function(x, y, settings) {
             this.parent(x,y,settings);
