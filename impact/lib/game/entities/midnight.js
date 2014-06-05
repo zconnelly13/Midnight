@@ -27,15 +27,7 @@ ig.module(
             this.addAnim('default',0.035/2,animOrder);
         },
 
-        handleCameraMovement: function() {
-            if (this.pos.x > ig.system.width / 2) {
-                ig.game.screen.x = this.pos.x - ig.system.width / 2;
-            }
-            if (this.pos.y < ig.system.height / 2 || ig.game.followY) {
-                ig.game.screen.y = this.pos.y - ig.system.height / 2;
-            }
-        },
-
+        
         handleMovement: function() {
             if (ig.input.state('left')) {
                 this.currentAnim.flip.x = true;
@@ -52,9 +44,8 @@ ig.module(
         },
 
         update: function() {
-            this.handleMovement();
             this.parent();
-            this.handleCameraMovement();
+            this.handleMovement();
         },
 
     });

@@ -34,11 +34,15 @@ ig.module(
             } else {
                 this.x -= 0.40 + Math.random()/16;
             }
-            if (this.pos.x < -900) {
+            if (this.x < -900) {
                 ig.game.spawnEntity(EntityCloud,$(window).width()+Math.random()*100,Math.random()*300-150);
                 this.kill();
-                console.log('dead cloud!');
             }
+        },
+
+        draw: function() {
+            var img = this.animSheet.image;
+            ig.system.context.drawImage(img.data,this.x,this.y);
         },
 
     });

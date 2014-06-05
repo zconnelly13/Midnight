@@ -9,7 +9,6 @@ ig.module(
     EntityMoonclock = ig.Entity.extend({
         _wmScalable: true,
         size: {x: 382, y:382},
-        maxVel: { x: 0, y: 0 },
         collides: ig.Entity.COLLIDES.NEVER,
         gravityFactor: 0,
         name: "MoonClock",
@@ -21,14 +20,14 @@ ig.module(
         init: function(x, y, settings) {
             this.parent(x,y,settings);
             this.addAnim('default',1,[0]);
-            this.x = this.pos.x;
-            this.y = this.pos.y;
         },
 
         update: function() {
             this.parent();
-            this.pos.x = this.x + ig.game.screen.x;
-            this.pos.y = this.y + ig.game.screen.y;
+        },
+
+        draw: function() {
+            this.animSheet.image.draw($(window).width() - (8*this.size.x/9),0);
         },
 
     });
