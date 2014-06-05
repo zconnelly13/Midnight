@@ -35,6 +35,9 @@ MyGame = ig.Game.extend({
 });
 
 ig.main( '#canvas', MyGame, 60, $(window).width(), $(window).height(), 1 );
+$(window).onresize = function () {
+    ig.system.resize($(window).width(), $(window).height());
+}
 //$(window).resize(this.resize.bind());
 
 });

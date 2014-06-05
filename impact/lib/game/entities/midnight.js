@@ -28,12 +28,12 @@ ig.module(
         },
 
         handleCameraMovement: function() {
-            //if (this.pos.x > ig.system.width / 2) {
-                //ig.game.screen.x = this.pos.x - ig.system.width / 2;
-            //}
-            //if (this.pos.y < ig.system.height / 2 || ig.game.followY) {
-                //ig.game.screen.y = this.pos.y - ig.system.height / 2;
-            //}
+            if (this.pos.x > ig.system.width / 2) {
+                ig.game.screen.x = this.pos.x - ig.system.width / 2;
+            }
+            if (this.pos.y < ig.system.height / 2 || ig.game.followY) {
+                ig.game.screen.y = this.pos.y - ig.system.height / 2;
+            }
         },
 
         handleMovement: function() {
