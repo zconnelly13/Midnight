@@ -24,6 +24,7 @@ ig.module(
             for(var i=0;i<60;i++) {
                 animOrder.push(i);
             }
+            this.addAnim('idle',1,[60]);
             this.addAnim('default',0.035/2,animOrder);
         },
 
